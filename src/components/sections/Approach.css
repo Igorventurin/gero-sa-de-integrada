@@ -1,0 +1,108 @@
+.approach-section {
+    background-color: var(--color-background);
+    padding: 6rem 0;
+}
+
+.timeline-container {
+    position: relative;
+    margin-top: 4rem;
+}
+
+/* Timeline Line - Desktop */
+.timeline-line {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary));
+    z-index: 1;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 34, 80, 0.2);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.step-card {
+    text-align: center;
+    background: white;
+    padding: 0 1rem;
+}
+
+.step-icon-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--color-primary);
+    box-shadow: 0 0 0 10px white;
+    /* Mask the line behind */
+    transition: all 0.3s ease;
+}
+
+.step-card:hover .step-icon-wrapper {
+    background-color: var(--color-secondary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.step-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--color-primary);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-card h3 {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-primary);
+}
+
+.step-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .timeline-line {
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .step-icon-wrapper {
+        margin-bottom: 1rem;
+    }
+}

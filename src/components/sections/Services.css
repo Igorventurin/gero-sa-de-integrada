@@ -16,6 +16,8 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card:hover {
@@ -43,6 +45,10 @@
 
 .service-content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5rem;
 }
 
 .service-header {
@@ -55,7 +61,7 @@
 }
 
 .service-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--color-primary);
     margin-bottom: 1.5rem;
     font-family: var(--font-body);
@@ -103,6 +109,27 @@
         grid-template-columns: 1fr;
         max-width: 500px;
         margin-left: auto;
-        margin-right: auto;
     }
+}
+
+/* Service CTA Button */
+.btn-service-cta {
+    display: inline-block;
+    margin-top: auto;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-service-cta:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
 }

@@ -21,13 +21,13 @@ const Evidence = () => {
     const [startIndex, setStartIndex] = useState(0);
     const [visibleCount, setVisibleCount] = useState(3);
 
-    // Auto-rotate every 5 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextSlide();
-        }, 5000);
-        return () => clearInterval(interval);
-    }, [startIndex, visibleCount]);
+    const nextSlide = () => {
+        setStartIndex((prev) => (prev + 1) % images.length);
+    };
+
+    const prevSlide = () => {
+        setStartIndex((prev) => (prev - 1 + images.length) % images.length);
+    };
 
     // Handle responsiveness
     useEffect(() => {
@@ -46,13 +46,14 @@ const Evidence = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const nextSlide = () => {
-        setStartIndex((prev) => (prev + 1) % images.length);
-    };
+    // Auto-rotate every 5 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [startIndex]);
 
-    const prevSlide = () => {
-        setStartIndex((prev) => (prev - 1 + images.length) % images.length);
-    };
 
     // Get visible images (wrap around)
     const getVisibleImages = () => {

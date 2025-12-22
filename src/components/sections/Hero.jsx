@@ -1,11 +1,12 @@
 import './Hero.css';
 import { ChevronRight } from 'lucide-react';
+import heroImage from '../../assets/hero-image.png';
 
 const Hero = () => {
     return (
         <section id="hero" className="hero-section">
             <div className="hero-background">
-                <img src="/hero_bg.png" alt="Idosos ativos e felizes" className="hero-img" />
+                <img src={heroImage} alt="Idosos ativos e felizes" className="hero-img" />
                 <div className="hero-overlay"></div>
             </div>
 

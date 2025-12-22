@@ -78,6 +78,18 @@ button {
   padding: 0 1rem;
 }
 
+
 section {
   padding: var(--spacing-section) 0;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    text-align: center !important;
+  }
+
+  .section-title::after {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

@@ -22,19 +22,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Simple Parallax Effect can be added with JS or slightly scaled here */
-    transform: scale(1.1);
-    animation: slowZoom 20s infinite alternate;
-}
-
-@keyframes slowZoom {
-    from {
-        transform: scale(1.1);
-    }
-
-    to {
-        transform: scale(1.15);
-    }
+    object-position: center;
 }
 
 .hero-overlay {
@@ -43,7 +31,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.4) 100%);
+    background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+
 }
 
 .hero-content {
@@ -58,7 +47,7 @@
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeUp 1s ease forwards 0.2s;
-    color: var(--color-primary);
+    color: #ffffff;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -67,7 +56,7 @@
     font-size: 1.35rem;
     max-width: 700px;
     margin-bottom: 3rem;
-    color: #555;
+    color: #e0e0e0;
     line-height: 1.7;
     opacity: 0;
     animation: fadeUp 1s ease forwards 0.5s;
@@ -106,13 +95,13 @@
 
 .btn-outline {
     background-color: transparent;
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .btn-outline:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: #ffffff;
+    color: var(--color-primary);
     transform: translateY(-2px);
 }
 
@@ -137,7 +126,7 @@
     }
 
     .hero-overlay {
-        background: rgba(255, 255, 255, 0.9);
+        background: transparent;
     }
 
     .hero-title {

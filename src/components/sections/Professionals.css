@@ -164,6 +164,10 @@
         /* Fixed height for image on mobile */
     }
 
+    .prof-photo-full {
+        object-position: center top;
+    }
+
     .prof-content-col {
         width: 100%;
         padding: 1.5rem;

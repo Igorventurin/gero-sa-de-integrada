@@ -51,6 +51,7 @@ const Services = () => {
                                         <li key={idx}>{item}</li>
                                     ))}
                                 </ul>
+                                <a href="#contato" className="btn-service-cta">Fale Conosco</a>
                             </div>
                         </div>
                     ))}

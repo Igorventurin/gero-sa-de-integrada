@@ -1,19 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     const mainLinks = [
         { name: 'Início', href: '#hero' },
@@ -82,6 +73,12 @@ const Header = () => {
                                 </a>
                             </li>
                         ))}
+
+                        <li className="mobile-only-link">
+                            <a href="#contato" onClick={handleLinkClick}>
+                                Converse com os profissionais
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 

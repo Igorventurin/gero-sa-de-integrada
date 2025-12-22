@@ -48,7 +48,7 @@ const Professionals = () => {
                                         <span><strong>Foco:</strong> {prof.focus}</span>
                                     </div>
                                     <div className="prof-contact">
-                                        <button className="btn-schedule">Agendar Consulta</button>
+                                        <a href="#contato" className="btn-schedule">Agendar Consulta</a>
                                     </div>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import { Award, Medal, Star } from 'lucide-react';
+import pioneirosImg from '../../assets/pioneiros.jpeg';
 import './Differentials.css';
 
 const Differentials = () => {
@@ -14,7 +15,7 @@ const Differentials = () => {
                         Somos referência na integração entre ortopedia, fisioterapia e especialidades complementares para diagnóstico, prevenção e reabilitação de distúrbios ósseos e musculares no envelhecimento.
                     </p>
 
-                    <div className="history-highlights">
+                    <div className="highlight-item-left">
                         <div className="highlight-item">
                             <Star className="highlight-icon" />
                             <div>
@@ -22,6 +23,15 @@ const Differentials = () => {
                                 <p>Protocolos adotados por instituições de ensino.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="differentials-right-col">
+                    <div className="differentials-image">
+                        <img src={pioneirosImg} alt="Cuidado profissional com a pessoa idosa" />
+                    </div>
+
+                    <div className="highlight-item-right">
                         <div className="highlight-item">
                             <Medal className="highlight-icon" />
                             <div>
@@ -30,10 +40,6 @@ const Differentials = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="differentials-image">
-                    <img src="/differential_image.png" alt="Cuidado profissional com a pessoa idosa" />
                 </div>
             </div>
         </section>

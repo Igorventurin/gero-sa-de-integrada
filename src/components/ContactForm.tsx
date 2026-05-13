@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
     // Simulate a brief delay then redirect to WhatsApp
     setTimeout(() => {
-      const phoneNumber = '5543999999999'; // Replace with actual WhatsApp number
+      const phoneNumber = '5543996328616'; // Replace with actual WhatsApp number
       const message = encodeURIComponent(`Olá! Meu nome é ${name} e gostaria de saber mais sobre os serviços da SOMOS GERO.`);
       window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
       

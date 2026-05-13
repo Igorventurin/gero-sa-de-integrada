@@ -10,7 +10,7 @@ const navigation = [
 ];
 
 const socials = [
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/somosgero/', label: 'Instagram' },
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
 ];
@@ -68,19 +68,19 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/70">
-                  Londrina, PR<br />Brasil
+                  Rua Monte Castelo, 677, Londrina
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="tel:+5543999999999" className="text-primary-foreground/70 hover:text-secondary transition-colors">
-                  (43) 99999-9999
+                <a href="tel:+5543996328616" className="text-primary-foreground/70 hover:text-secondary transition-colors">
+                  (43) 99632-8616
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:contato@somosgero.com.br" className="text-primary-foreground/70 hover:text-secondary transition-colors">
-                  contato@somosgero.com.br
+                <a href="mailto:Somosgero@gmail.com" className="text-primary-foreground/70 hover:text-secondary transition-colors">
+                  Somosgero@gmail.com
                 </a>
               </li>
             </ul>

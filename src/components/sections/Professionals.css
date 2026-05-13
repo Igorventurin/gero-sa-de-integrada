@@ -7,16 +7,17 @@
     text-align: center;
 }
 
+.professionals-container {
+    max-width: 95% !important;
+    padding: 0 2rem;
+}
+
 .professionals-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
-    max-width: 1400px;
-    /* Increased to fit side-by-side */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
+    width: 100%;
 }
 
 .professional-card {
@@ -96,6 +97,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-top: auto;
     margin-bottom: 1.5rem;
     font-size: 0.85rem;
     padding: 0.6rem 0.8rem;
@@ -115,7 +117,6 @@
 }
 
 .prof-contact {
-    margin-top: auto;
 }
 
 .btn-schedule {
@@ -143,6 +144,13 @@
 
 /* Responsive */
 @media (max-width: 1200px) {
+    .professionals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
     .professionals-grid {
         grid-template-columns: 1fr;
         max-width: 800px;

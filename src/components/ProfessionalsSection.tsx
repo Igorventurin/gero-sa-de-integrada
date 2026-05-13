@@ -17,12 +17,20 @@ const professionals = [
     focus: 'Reabilitação, funcionalidade, sarcopenia',
     icon: Activity,
   },
+  {
+    name: 'Dr. Gabriel Utzumi',
+    role: 'Médico Geriatra',
+    phone: '(XX) XXXXX-XXXX',
+    bio: 'Médico geriatra com atuação especializada em longevidade saudável e cuidado integral da pessoa idosa. Atua na prevenção e tratamento da sarcopenia, osteoporose, quedas, fraturas por fragilidade e outras doenças relacionadas ao envelhecimento, com foco na preservação da autonomia, cognição, mobilidade e qualidade de vida.',
+    focus: 'Longevidade, prevenção de quedas, sarcopenia, saúde óssea e cognição',
+    icon: Stethoscope,
+  },
 ];
 
 export const ProfessionalsSection = () => {
   return (
     <section id="profissionais" className="section-padding bg-background">
-      <div className="container mx-auto">
+      <div className="w-[95%] max-w-[1800px] mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="heading-section text-foreground mb-6">
             Os Profissionais
@@ -32,11 +40,11 @@ export const ProfessionalsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto">
           {professionals.map((professional, index) => (
             <div
               key={professional.name}
-              className="card-professional"
+              className="card-professional flex flex-col h-full"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="flex items-start gap-4 mb-6">
@@ -62,7 +70,7 @@ export const ProfessionalsSection = () => {
                 {professional.bio}
               </p>
 
-              <div className="pt-4 border-t border-primary-foreground/10">
+              <div className="pt-4 border-t border-primary-foreground/10 mt-auto">
                 <p className="text-xs uppercase tracking-wider text-secondary/80 mb-1">
                   Área de foco
                 </p>

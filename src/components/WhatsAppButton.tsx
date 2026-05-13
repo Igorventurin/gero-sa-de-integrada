@@ -1,7 +1,7 @@
 
 
 export const WhatsAppButton = () => {
-  const phoneNumber = '5543999999999'; // Replace with actual WhatsApp number
+  const phoneNumber = '5543996328616'; // Replace with actual WhatsApp number
   const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os serviços da SOMOS GERO.');
 
   return (

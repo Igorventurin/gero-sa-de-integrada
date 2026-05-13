@@ -45,7 +45,7 @@ const Contact = () => {
             };
 
             // Enviar webhook
-            await fetch('https://n8n-webhook.7it7cw.easypanel.host/webhook/somos-gero', {
+            await fetch('https://hook.us2.make.com/ckijxaa9iht9jf08l9uwgwzpty76atlu', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -94,15 +94,15 @@ const Contact = () => {
                     <div className="contact-methods">
                         <div className="method-item">
                             <Phone size={20} />
-                            <span>(43) 9632-8616</span>
+                            <span>(43) 99632-8616</span>
                         </div>
                         <div className="method-item">
                             <Mail size={20} />
-                            <span>contato@somosgero.com.br</span>
+                            <span>Somosgero@gmail.com</span>
                         </div>
                         <div className="method-item">
                             <MapPin size={20} />
-                            <span>Londrina - PR</span>
+                            <span>Rua Monte Castelo, 677, Londrina</span>
                         </div>
                     </div>
                 </div>

@@ -17,15 +17,15 @@ const Footer = () => {
                     <ul>
                         <li>
                             <MapPin size={18} />
-                            <span>Endereço a definir, Londrina - PR</span>
+                            <span>Rua Monte Castelo, 677, Londrina</span>
                         </li>
                         <li>
                             <Phone size={18} />
-                            <span>(43) 0000-0000</span>
+                            <span>(43) 99632-8616</span>
                         </li>
                         <li>
                             <Mail size={18} />
-                            <span>contato@somosgero.com.br</span>
+                            <span>Somosgero@gmail.com</span>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className="footer-col social-col">
                     <h3>Redes Sociais</h3>
                     <div className="social-icons">
-                        <a href="#" aria-label="Instagram"><Instagram /></a>
+                        <a href="https://www.instagram.com/somosgero/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
                         <a href="#" aria-label="Facebook"><Facebook /></a>
                         <a href="#" aria-label="LinkedIn"><Linkedin /></a>
                     </div>

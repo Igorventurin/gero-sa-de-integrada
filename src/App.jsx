@@ -8,6 +8,7 @@ import Professionals from './components/sections/Professionals';
 import ProblemContext from './components/sections/ProblemContext';
 import Approach from './components/sections/Approach';
 import Services from './components/sections/Services';
+import Clinic from './components/sections/Clinic';
 import Differentials from './components/sections/Differentials';
 import Evidence from './components/sections/Evidence';
 import Research from './components/sections/Research';
@@ -26,6 +27,7 @@ function App() {
         <ProblemContext />
         <Approach />
         <Services />
+        <Clinic />
         <Differentials />
         <ContentWindow />
         <Research />

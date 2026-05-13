@@ -3,6 +3,7 @@ import './Professionals.css';
 
 import marcioImg from '../../assets/marcio1.jpeg';
 import fernandoImg from '../../assets/fernando1.jpeg';
+import gabrielImg from '../../assets/gabriel1.png';
 
 const Professionals = () => {
     const professionals = [
@@ -23,12 +24,21 @@ const Professionals = () => {
             bio: "Doutor em Ciências da Reabilitação, graduado em Educação Física e Fisioterapia. Atua na avaliação e no cuidado clínico-funcional de pessoas idosas, com foco em osteometabolismo, sarcopenia, fragilidade óssea e prevenção de quedas.",
             focus: "Reabilitação, funcionalidade, sarcopenia",
             photo: marcioImg
+        },
+        {
+            id: 3,
+            name: "Dr. Gabriel Utzumi",
+            role: "MÉDICO GERIATRA",
+            cref: "CRM/PR xxxxx",
+            bio: "Médico geriatra com atuação especializada em longevidade saudável e cuidado integral da pessoa idosa. Atua na prevenção e tratamento da sarcopenia, osteoporose, quedas, fraturas por fragilidade e outras doenças relacionadas ao envelhecimento, com foco na preservação da autonomia, cognição, mobilidade e qualidade de vida.",
+            focus: "Longevidade, prevenção de quedas, sarcopenia, saúde óssea e cognição",
+            photo: gabrielImg
         }
     ];
 
     return (
         <section id="profissionais" className="professionals-section">
-            <div className="container">
+            <div className="container professionals-container">
                 <h2 className="section-title center">Nossos Profissionais</h2>
                 <div className="professionals-grid">
                     {professionals.map((prof) => (
